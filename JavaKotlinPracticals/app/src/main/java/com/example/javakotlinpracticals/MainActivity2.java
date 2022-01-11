@@ -20,7 +20,6 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         listView=findViewById(R.id.listview);
 
-
         ArrayList<String> items=new ArrayList<>(5);
         items.add("Class");
         items.add("Object");
@@ -29,7 +28,7 @@ public class MainActivity2 extends AppCompatActivity {
         items.add("Abstraction");
 
         ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,items);
-listView.setAdapter(arrayAdapter);
+        listView.setAdapter(arrayAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
