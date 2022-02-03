@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">JavaKotlinPracticals</string>
+
+    <string name="shortMsg">Sign up and get started</string>
+    <string name="welcomeMsg">Welcome</string>
+
+    <string name="username">Username</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="checkBox1">Java</string>
+    <string name="checkBox2">Kotlin</string>
+    <string name="checkBox3">Swift</string>
+    <string name="checkBox4">ReactNative</string>
+    <string name="outlineButton">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="i_accept_terms_and_conditions">I accept terms and conditions</string>
+    <string name="ripple_with_border">Ripple With Border</string>
+    <string name="ripple_without_border">Ripple Without Border</string>
+    <string name="custom_ripple_with_border">Custom Ripple With Border</string>
+    <string name="custom_ripple_without_border">Custom Ripple Without Border</string>
+    <string name="simple_form_using_ui_widgets">Form Using UI Widgets</string>
+    <string name="form_using_material_components">Form Using MDC</string>
+    <string name="button_with_ripple_effects">Ripple Effects</string>
 </resources>

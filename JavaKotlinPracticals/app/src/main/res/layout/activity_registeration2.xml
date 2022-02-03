@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    tools:context="uiwidgets.Registeration">
+
+    <ImageButton
+        android:id="@+id/arrowSimple"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/ic_sharp_keyboard_backspace_24"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/welcomeMsg"
+        android:textColor="@color/purple_700"
+        android:textSize="@dimen/_24ssp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="@string/shortMsg"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:paddingStart="@dimen/_5sdp"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:minHeight="@dimen/_40sdp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/edittext"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:minHeight="@dimen/_40sdp"
+            android:paddingStart="@dimen/_5sdp"
+            tools:ignore="RtlSymmetry" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/radioGroupFemale"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            tools:ignore="RtlSymmetry">
+
+            <RadioButton
+                android:id="@+id/radioGroupFemale"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"
+                android:textSize="@dimen/_12ssp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/radioGroupMale"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                android:textSize="@dimen/_12ssp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:text="@string/i_accept_terms_and_conditions"
+        android:textSize="@dimen/_14ssp" />
+
+    <Button
+        android:id="@+id/buttonsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/signup"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_16ssp" />
+
+</LinearLayout>

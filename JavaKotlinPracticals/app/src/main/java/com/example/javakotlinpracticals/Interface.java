@@ -14,7 +14,7 @@ class programming implements language {
     }
 }
 
-public class InterfaceDemo {
+public class Interface {
     public static void main(String[] args) {
         programming obj = new programming();
         obj.java();
