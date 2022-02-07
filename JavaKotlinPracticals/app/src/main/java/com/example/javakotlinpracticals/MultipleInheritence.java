@@ -14,7 +14,7 @@ interface app {
     void Android();
 }
 
-class demo implements web, app {
+class demo1 implements web, app {
 
     @Override
     public void PHP() {
@@ -29,7 +29,7 @@ class demo implements web, app {
 
 public class MultipleInheritence {
     public static void main(String[] args) {
-        demo obj = new demo();
+        demo1 obj = new demo1();
         obj.PHP();//call php method
         obj.Android();//call android method
         obj.example();//call example

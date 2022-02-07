@@ -11,13 +11,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JavaKotlinPracticals">
         <activity
-            android:name=".MainActivity"
+            android:name="uiwidgets.RippleEffect"
+            android:exported="false" />
+        <activity
+            android:name="uiwidgets.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="uiwidgets.CustomToast"
+            android:exported="false" />
+        <activity
+            android:name="uiwidgets.MDCForm"
+            android:exported="true" />
+        <activity
+            android:name="uiwidgets.Registeration"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
         </activity>
     </application>
 

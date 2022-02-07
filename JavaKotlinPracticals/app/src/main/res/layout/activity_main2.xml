@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        app:cornerRadius="@dimen/_10sdp"
+        app:strokeColor="@color/purple_700"
+        android:id="@+id/simple_form"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/simple_form_using_ui_widgets"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_700"
+        android:textSize="@dimen/_12sdp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/material_form"
+        app:cornerRadius="@dimen/_10sdp"
+        app:strokeColor="@color/purple_700"
+        android:layout_marginTop="@dimen/_20sdp"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/form_using_material_components"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_700"
+        android:textSize="@dimen/_12ssp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ripple_effect"
+        app:cornerRadius="@dimen/_10sdp"
+        app:strokeColor="@color/purple_700"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/button_with_ripple_effects"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_700"
+        android:textSize="@dimen/_12ssp" />
+
+</LinearLayout>
