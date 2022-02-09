@@ -3,7 +3,6 @@
 
     <string name="shortMsg">Sign up and get started</string>
     <string name="welcomeMsg">Welcome</string>
-
     <string name="username">Username</string>
     <string name="email">Email Address</string>
     <string name="password">Password</string>
@@ -24,4 +23,94 @@
     <string name="simple_form_using_ui_widgets">Form Using UI Widgets</string>
     <string name="form_using_material_components">Form Using MDC</string>
     <string name="button_with_ripple_effects">Ripple Effects</string>
+    <string name="facebook">FACEBOOK</string>
+    <string name="facebook_home">facebook</string>
+    <string name="todo">TODO</string>
+    <string name="write_something_here">Write Something Here</string>
+    <string name="hi">HI</string>
+    <string name="constraint_layout">Constraint Layout</string>
+    <string name="linear_layout">Linear Layout</string>
+    <string name="create_an_acoount_to_get_all_features">Create an acoount to get all features</string>
+    <string name="let_s_get_started">Let\'s Get Started!</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="select_country">Select Country</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="i_accept_all_the_terms_and_conditions">I accept all the terms and conditions</string>
+    <string name="create">Create</string>
+    <string name="countries">Countries</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="table_layout">Table Layout</string>
+    <string name="tab_layout">Tab Layout</string>
+    <string name="list_view">List View</string>
+    <string name="grid_view">Grid View</string>
+    <string name="frame_layout">Frame Layout</string>
+
+
+    <string-array name="countries">
+        <item>India</item>
+        <item>USA</item>
+        <item>UK</item>
+        <item>Canada</item>
+        <item>Itli</item>
+        <item>Span</item>
+    </string-array>
+
+    <string-array name="city">
+        <item>Ahmedabad</item>
+        <item>Rajkot</item>
+        <item>Surat</item>
+        <item>Bhavnagar</item>
+        <item>Gandhinagar</item>
+        <item>Vadodara</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello Calls Fragment</string>
+    <string name="chats">CHATS</string>
+    <string name="status">STATUS</string>
+    <string name="calls">Calls</string>
+    <string name="done">Done</string>
+    <string name="submit">Submit</string>
+    <string name="my_dashboard">My DashBoard</string>
+    <string name="cart">CART</string>
+    <string name="city">City</string>
+    <string name="street2">Street2</string>
+    <string name="street1">Street1</string>
+    <string name="payment">Payment</string>
+    <string name="pincode">Pincode</string>
+    <string name="state">State</string>
+    <string name="address">ADDRESS</string>
+    <string name="hello_chats_fragment">Hello Chats Fragment</string>
+    <string name="hello_status_fragment">Hello Status Fragment</string>
+    <string name="hello_frame_two">Hello Frame Two</string>
+    <string name="hello_frame_one">Hello Frame One</string>
+    <string name="first">FIRST</string>
+    <string name="second">SECond</string>
+    <string name="ui_wigets_b">UI Wigets(B)</string>
+    <string name="ui_wigets_a">UI Wigets(A)</string>
+    <string name="merge_and_include_tag">Merge And Include Tag</string>
+    <string name="title_activity_merge_and_include">MergeAndInclude</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="logout">Logout</string>
+    <string name="home">Home</string>
+    <string name="chat">Chat</string>
+    <string name="profile">Profile</string>
+    <string name="widgets">Widgets</string>
+    <string name="settings">Settings</string>
+    <string name="shampoo">Shampoo</string>
+    <string name="_70_00">70.00</string>
+    <string name="conditioner">Conditioner</string>
+    <string name="_100_00">100.00</string>
+    <string name="total">Total</string>
+    <string name="_170">170</string>
+    <string name="textview">TextView</string>
+    <string name="button_one">Button One</string>
+    <string name="button_two">Button Two</string>
 </resources>
