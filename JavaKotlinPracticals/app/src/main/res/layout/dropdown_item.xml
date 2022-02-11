@@ -1,0 +1,9 @@
+<TextView
+    android:id="@+id/singleitem"
+    android:layout_width="match_parent"
+    android:textColor="@color/dark_blue"
+    android:textSize="@dimen/_14ssp"
+    android:layout_height="wrap_content"
+    android:text="@string/textview"
+    android:padding="@dimen/_14sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"/>
