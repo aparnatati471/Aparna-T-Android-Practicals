@@ -68,13 +68,13 @@ class MDCForm : AppCompatActivity() {
         val layout = layoutInflater.inflate(R.layout.list_content, binding2.customToast)
         val context = applicationContext
         val duration = Toast.LENGTH_LONG
-        val text = binding2.tvmsg
+        val text = binding2.tvMessage
         text.text = result.toString()
 
         val toast = Toast(context)
         toast.setGravity(Gravity.CENTER_HORIZONTAL,0,0)
         toast.duration = duration
-        toast.setView(layout)
+        toast.view = layout
         toast.show()
     }
 

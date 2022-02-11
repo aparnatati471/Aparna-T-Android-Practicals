@@ -14,4 +14,11 @@
         <item name="radioButtonStyle">@style/Widget.MaterialComponents.CompoundButton.RadioButton</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="Theme.JavaKotlinPracticals.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.JavaKotlinPracticals.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.JavaKotlinPracticals.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
