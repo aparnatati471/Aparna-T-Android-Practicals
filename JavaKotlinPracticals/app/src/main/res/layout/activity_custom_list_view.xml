@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:layout_height="match_parent"
+    tools:context="uiwidgetsc.recyclerviewandadapters.CustomListView">
+
+    <TextView
+        android:id="@+id/txtforcustom"
+        android:textColor="@color/dark_blue"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="@string/custom_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_16ssp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/listview"
+        tools:listitem="@layout/list_item" />
+
+</LinearLayout>

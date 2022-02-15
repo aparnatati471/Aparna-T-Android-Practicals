@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">JavaKotlinPracticals</string>
-
+    <string name="HI">Sign up and get started</string>
     <string name="shortMsg">Sign up and get started</string>
     <string name="welcomeMsg">Welcome</string>
     <string name="username">Username</string>
@@ -23,6 +23,16 @@
     <string name="simple_form_using_ui_widgets">Form Using UI Widgets</string>
     <string name="form_using_material_components">Form Using MDC</string>
     <string name="button_with_ripple_effects">Ripple Effects</string>
+    <string name="simple_list_view">Simple List View</string>
+    <string name="simple_list_view_with_default_style">Simple List View With Default Style</string>
+    <string name="simple_list_view_with_custom_style">Simple List View with Custom Style</string>
+    <string name="custom_list_view">Custom List View</string>
+    <string name="message">Message</string>
+    <string name="name">Name</string>
+    <string name="recyclerview">Recyclerview With CheckBox</string>
+    <string name="straggered_grid_layout">Straggered Grid Layout</string>
+    <string name="straggeredgridlayout">Straggered Grid Layout</string>
+    <string name="subtitle">subtitle</string>
     <string name="facebook">FACEBOOK</string>
     <string name="facebook_home">facebook</string>
     <string name="todo">TODO</string>
@@ -45,7 +55,6 @@
     <string name="grid_view">Grid View</string>
     <string name="frame_layout">Frame Layout</string>
 
-
     <string-array name="countries">
         <item>India</item>
         <item>USA</item>
@@ -62,9 +71,8 @@
         <item>Bhavnagar</item>
         <item>Gandhinagar</item>
         <item>Vadodara</item>
-
     </string-array>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello Calls Fragment</string>
     <string name="chats">CHATS</string>
     <string name="status">STATUS</string>
@@ -95,7 +103,6 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="logout">Logout</string>
@@ -113,4 +120,17 @@
     <string name="textview">TextView</string>
     <string name="button_one">Button One</string>
     <string name="button_two">Button Two</string>
+    <string name="viewpager">ViewPager</string>
+    <string name="recents">Recents</string>
+    <string name="myfavourites">My Favourites</string>
+    <string name="expandable_list_veiw">Expandable List Veiw</string>
+    <string name="title">title</string>
+    <string name="main_title">Main Title</string>
+    <string name="expandablerecyclerview">Nested RecyclerView</string>
+    <string name="expandable_recycler_view">Expandable Recycler View</string>
+    <string name="bottom_navigation_bar">Bottom Navigation Bar</string>
+    <string name="exercise">Exercise</string>
+    <string name="nested_recycler_view">Nested Recycler View</string>
+    <string name="search">Search</string>
+    <string name="my_profile">My Profile</string>
 </resources>
