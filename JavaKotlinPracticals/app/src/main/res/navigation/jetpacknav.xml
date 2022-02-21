@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/jetpacknav"
+    app:startDestination="@id/galleryFragment">
+
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="uiwidgetd.activity.intent.fragment.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_galleryFragment_to_addMessageFragment"
+            app:destination="@id/addMessageFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMessageFragment"
+        android:name="uiwidgetd.activity.intent.fragment.AddMessageFragment"
+        android:label="fragment_add_message"
+        tools:layout="@layout/fragment_add_message" >
+        <action
+            android:id="@+id/action_addMessageFragment_to_viewMessageFragment"
+            app:destination="@id/viewMessageFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewMessageFragment"
+        android:name="uiwidgetd.activity.intent.fragment.ViewMessageFragment"
+        android:label="fragment_view_message"
+        tools:layout="@layout/fragment_view_message" >
+        <action
+            android:id="@+id/action_viewMessageFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+</navigation>

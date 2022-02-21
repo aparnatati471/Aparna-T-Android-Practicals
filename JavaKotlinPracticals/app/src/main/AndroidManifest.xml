@@ -3,6 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.javakotlinpracticals">
 
+    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:fullBackupOnly="true"
@@ -12,14 +21,61 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JavaKotlinPracticals">
         <activity
-            android:name="uiwidgetsc.recyclerviewandadapters.PersonActivity"
+            android:name="uiwidgetd.activity.intent.fragment.IntentFilter"
+            android:exported="true">
+
+            <intent-filter>
+                <data android:scheme="http" android:host="www.google.com" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <intent-filter>
+                <data android:scheme="https" android:host="www.google.com" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="uiwidgetd.activity.intent.fragment.PendingIntent"
             android:exported="false" />
         <activity
-            android:name="uiwidgetsc.recyclerviewandadapters.BottomNavigationBar"
+            android:name="uiwidgetd.activity.intent.fragment.ExerciseFour"
+            android:exported="false" />
+        <activity android:name="uiwidgetsc.recyclerviewandadapters.BottomNavigationBar"
             android:exported="false" />
         <activity
-            android:name="uiwidgetsc.recyclerviewandadapters.RecyclerAndAdaptersExercise"
+            android:name="uiwidgetd.activity.intent.fragment.ExerciseThree"
             android:exported="false" />
+        <activity
+            android:name="uiwidgetd.activity.intent.fragment.ExerciseTwo"
+            android:exported="false" />
+        <activity
+            android:name="uiwidgetd.activity.intent.fragment.ExerciseOne"
+            android:exported="false" />
+        <activity
+            android:name="uiwidgetd.activity.intent.fragment.Fragments"
+            android:exported="false" />
+        <activity
+            android:name="uiwidgetd.activity.intent.fragment.StartActivityForResultTwo"
+            android:exported="false" />
+        <activity
+            android:name="uiwidgetd.activity.intent.fragment.StartActivityForResultOne"
+            android:exported="false" />
+        <activity
+            android:name="uiwidgetd.activity.intent.fragment.ImplicitIntent"
+            android:exported="false" />
+        <activity
+            android:name="uiwidgetd.activity.intent.fragment.IntentIndex"
+            android:exported="false" />
+        <activity android:name="uiwidgetsc.recyclerviewandadapters.Index"
+            android:exported="false"/>
+
+        <activity android:name="uiwidgetsc.recyclerviewandadapters.RecyclerAndAdaptersExercise"
+            android:exported="false"/>
         <activity
             android:name="uiwidgetsc.recyclerviewandadapters.ExpandableRecyclerView"
             android:exported="false" />
@@ -46,7 +102,7 @@
             android:name="uiwidgetsc.recyclerviewandadapters.SimpleListView"
             android:exported="false" />
         <activity
-            android:name="uiwidgetsc.recyclerviewandadapters.Index"
+            android:name="uiwidgets.ExerciseActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -55,18 +111,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="uiwidgets.MergeAndInclude"
-            android:exported="false"
-            android:label="@string/title_activity_merge_and_include" />
-        <activity
-            android:name="uiwidgets.ExerciseActivity"
+            android:name="uiwidgetd.activity.intent.fragment.AndroidDIndex"
             android:exported="false" />
+        <activity
+            android:name="uiwidgetd.activity.intent.fragment.FragmentLifeCycleDemo"
+            android:exported="true" />
+        <activity
+            android:name="uiwidgetd.activity.intent.fragment.ActivityLifeCycleDemo"
+            android:exported="true" />
         <activity
             android:name="uiwidgets.RippleEffect"
             android:exported="false" />
         <activity
             android:name="uiwidgets.MainActivity"
             android:exported="true" />
+        <activity
+            android:name="uiwidgets.MergeAndInclude"
+            android:exported="false"
+            android:label="@string/title_activity_merge_and_include" />
         <activity
             android:name="uiwidgets.CustomToast"
             android:exported="false" />
@@ -106,6 +168,9 @@
         <activity
             android:name="uiwidgets.LayoutsMain"
             android:exported="false" />
+
+        <receiver android:name="uiwidgetd.activity.intent.fragment.AlarmReceiver" />
+
     </application>
 
 </manifest>

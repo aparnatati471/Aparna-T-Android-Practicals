@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="intents">
+        <item>Open Browser</item>
+        <item>Dial</item>
+        <item>Show Map</item>
+        <item>Search on Map</item>
+        <item>Take picture</item>
+        <item>Show contacts</item>
+    </string-array>
+
+    <string name="the_result_string">The result text is : "%1$s"</string>
+</resources>
