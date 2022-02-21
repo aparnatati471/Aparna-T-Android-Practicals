@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.17916666666666667" />
         <entry key="app/src/main/res/drawable/background.xml" value="0.15989583333333332" />
         <entry key="app/src/main/res/drawable/custom_bordered_ripple.xml" value="0.1546875" />
         <entry key="app/src/main/res/drawable/custom_borderless_ripple.xml" value="0.1546875" />
@@ -18,6 +19,7 @@
         <entry key="app/src/main/res/drawable/ic_outline_email_24.xml" value="0.18020833333333333" />
         <entry key="app/src/main/res/drawable/ic_outline_lock_24.xml" value="0.18020833333333333" />
         <entry key="app/src/main/res/layout/activity_button_ripple_affects.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_custom_list_view.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_custom_toast.xml" value="0.1484375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.21" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.22" />
@@ -26,8 +28,10 @@
         <entry key="app/src/main/res/layout/activity_registeration.xml" value="0.1640625" />
         <entry key="app/src/main/res/layout/activity_registeration2.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_ripple_effect.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/custom_straggered_grid_layout.xml" value="0.1" />
         <entry key="app/src/main/res/layout/custom_toast.xml" value="0.16304347826086957" />
         <entry key="app/src/main/res/layout/list_content.xml" value="0.13854166666666667" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.11775362318840579" />
       </map>
     </option>
   </component>
