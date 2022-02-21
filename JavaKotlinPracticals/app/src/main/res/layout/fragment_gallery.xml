@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:gravity="bottom"
+    tools:context="uiwidgetd.activity.intent.fragment.GalleryFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_70sdp"
+        android:elevation="@dimen/_1sdp"
+        app:cardCornerRadius="@dimen/_30sdp">
+
+        <ImageView
+            android:id="@+id/disp_image"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_baseline_camera_alt_24" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_floating_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:backgroundTint="@color/dark_blue"
+        android:contentDescription="@string/todo"
+        android:elevation="@dimen/_6sdp"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:pressedTranslationZ="@dimen/_12sdp"
+        app:srcCompat="@drawable/ic_baseline_camera_alt_24"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_floating_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_floating_camera"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:backgroundTint="@color/dark_blue"
+        android:contentDescription="@string/todo"
+        android:elevation="@dimen/_6sdp"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:pressedTranslationZ="@dimen/_12sdp"
+        app:srcCompat="@drawable/ic_baseline_browse_gallery_24"
+        app:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_floating_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_floating_gallery"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:backgroundTint="@color/dark_blue"
+        android:contentDescription="@string/todo"
+        android:minHeight="48dp"
+        android:tint="@color/white"
+        app:elevation="@dimen/_6sdp"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_add"
+        app:tint="@color/white" />
+
+</RelativeLayout>

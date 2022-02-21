@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="uiwidgetd.activity.intent.fragment.IntentIndex">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_implicit_intent"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@color/dark_blue"
+        android:text="@string/implicit_intent"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        app:cornerRadius="@dimen/_10sdp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_retreive"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@color/dark_blue"
+        android:text="@string/reterieve_data_from_sub_activity"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:cornerRadius="@dimen/_10sdp" />
+
+</LinearLayout>
