@@ -8,4 +8,5 @@ data class MoviesItem(
     val createdby: String,
     val publisher: String,
     val bio: String,
+    var expandable: Boolean = false
 )

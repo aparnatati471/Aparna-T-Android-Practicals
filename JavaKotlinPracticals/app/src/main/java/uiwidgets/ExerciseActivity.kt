@@ -3,7 +3,10 @@ package uiwidgets
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.javakotlinpracticals.databinding.ActivityAndroidDindexBinding
 import com.example.javakotlinpracticals.databinding.ActivityExerciseBinding
+import uiwidgetd.activity.intent.fragment.AndroidDIndex
+import uiwidgetsc.recyclerviewandadapters.Index
 
 class ExerciseActivity : AppCompatActivity() {
 
@@ -18,6 +21,13 @@ class ExerciseActivity : AppCompatActivity() {
         }
         binding.uiWidgetsB.setOnClickListener {
             startActivity(Intent(this, LayoutsMain::class.java))
+        }
+        binding.uiWidgetsC.setOnClickListener {
+            startActivity(Intent(this, Index::class.java))
+        }
+        binding.uiWidgetsD.setOnClickListener {
+            startActivity(Intent(this, AndroidDIndex::class.java))
+
         }
     }
 
