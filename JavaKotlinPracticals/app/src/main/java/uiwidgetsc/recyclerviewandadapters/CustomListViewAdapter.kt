@@ -21,7 +21,7 @@ class CustomListViewAdapter(
     @SuppressLint("ViewHolder")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         binding = ListItemBinding.inflate(context.layoutInflater, convertView as ViewGroup?, false)
-        binding.imageview.setImageResource(arrayList[position].personimg)
+      //  binding.imageview.setImageResource(arrayList[position].personimg)
         binding.pname.text = arrayList[position].personname
         binding.pmsg.text = arrayList[position].personmsg
         return binding.root

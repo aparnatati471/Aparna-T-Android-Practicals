@@ -21,23 +21,46 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JavaKotlinPracticals">
         <activity
+            android:name="uiwidgetse.otherimportantviews.NestedScrollView"
+            android:exported="false" />
+        <activity
+            android:name="uiwidgetse.otherimportantviews.HorizontalScrollViewSearch"
+            android:exported="false" />
+        <activity
+            android:name="uiwidgetse.otherimportantviews.HorizontalScrollView"
+            android:exported="false" />
+        <activity
+            android:name="uiwidgetse.otherimportantviews.WebView"
+            android:exported="false" />
+        <activity
+            android:name="uiwidgetse.otherimportantviews.AndroidEIndex"
+            android:exported="false" />
+        <activity
+            android:name="uiwidgetse.otherimportantviews.ListViewSearch"
+            android:exported="false" />
+        <activity
             android:name="uiwidgetd.activity.intent.fragment.IntentFilter"
             android:exported="true">
-
             <intent-filter>
-                <data android:scheme="http" android:host="www.google.com" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:host="www.google.com"
+                    android:scheme="http" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
-
             <intent-filter>
-                <data android:scheme="https" android:host="www.google.com" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:host="www.google.com"
+                    android:scheme="https" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
-
         </activity>
         <activity
             android:name="uiwidgetd.activity.intent.fragment.PendingIntent"
@@ -45,7 +68,8 @@
         <activity
             android:name="uiwidgetd.activity.intent.fragment.ExerciseFour"
             android:exported="false" />
-        <activity android:name="uiwidgetsc.recyclerviewandadapters.BottomNavigationBar"
+        <activity
+            android:name="uiwidgetsc.recyclerviewandadapters.BottomNavigationBar"
             android:exported="false" />
         <activity
             android:name="uiwidgetd.activity.intent.fragment.ExerciseThree"
@@ -71,11 +95,12 @@
         <activity
             android:name="uiwidgetd.activity.intent.fragment.IntentIndex"
             android:exported="false" />
-        <activity android:name="uiwidgetsc.recyclerviewandadapters.Index"
-            android:exported="false"/>
-
-        <activity android:name="uiwidgetsc.recyclerviewandadapters.RecyclerAndAdaptersExercise"
-            android:exported="false"/>
+        <activity
+            android:name="uiwidgetsc.recyclerviewandadapters.Index"
+            android:exported="false" />
+        <activity
+            android:name="uiwidgetsc.recyclerviewandadapters.RecyclerAndAdaptersExercise"
+            android:exported="false" />
         <activity
             android:name="uiwidgetsc.recyclerviewandadapters.ExpandableRecyclerView"
             android:exported="false" />
@@ -170,7 +195,6 @@
             android:exported="false" />
 
         <receiver android:name="uiwidgetd.activity.intent.fragment.AlarmReceiver" />
-
     </application>
 
 </manifest>

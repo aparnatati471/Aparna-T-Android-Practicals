@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="clickOne"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="uiwidgetse.otherimportantviews.AndroidEIndex">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_listview_search"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:onClick="@{clickOne.onClick}"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:backgroundTint="@color/dark_blue"
+            android:text="@string/listviewsearch"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            app:cornerRadius="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_recyclerview_search"
+            android:onClick="@{clickOne::onClick}"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@color/dark_blue"
+            android:text="@string/recyclerviewsearch"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            app:cornerRadius="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_listview_search" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_webview"
+            android:onClick="@{clickOne::onClick}"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@color/dark_blue"
+            android:text="@string/webview"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            app:cornerRadius="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_recyclerview_search" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_horizontalScrollView"
+            android:layout_width="@dimen/_200sdp"
+            android:onClick="@{clickOne::onClick}"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@color/dark_blue"
+            android:text="@string/horizontal_scroll_view"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            app:cornerRadius="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_webview" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_horizontalScrollViewSearch"
+            android:layout_width="@dimen/_200sdp"
+            android:onClick="@{clickOne::onClick}"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@color/dark_blue"
+            android:text="@string/horizontal_scroll_search"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            app:cornerRadius="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_horizontalScrollView" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_nestedScrollView"
+            android:onClick="@{clickOne::onClick}"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@color/dark_blue"
+            android:text="@string/nested_scroll_view"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            app:cornerRadius="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_horizontalScrollViewSearch" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

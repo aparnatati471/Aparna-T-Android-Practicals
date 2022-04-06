@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="clickOne"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="uiwidgetse.otherimportantviews.WebView">
+
+        <LinearLayout
+            android:id="@+id/chipGroups"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_pdf"
+                android:layout_width="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:onClick="@{(v)->clickOne.onClick(v)}"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/pdf"
+                android:checkable="true"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                app:chipBackgroundColor="#752F00"
+                android:textColor="@color/white"
+                android:layout_height="@dimen/_40sdp"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_loadUrl"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                app:layout_constraintStart_toEndOf="@id/chip_pdf"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/load_url"
+                android:onClick="@{(v)->clickOne.onClick(v)}"
+                android:checkable="true"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                app:chipBackgroundColor="#752F00"
+                android:textColor="@color/white"
+                android:layout_height="@dimen/_40sdp"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_loadwebpage"
+                android:onClick="@{(v)->clickOne.onClick(v)}"
+                android:checkable="true"
+                android:layout_width="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/chip_loadUrl"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/load_web_page"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                app:chipBackgroundColor="#752F00"
+                android:textColor="@color/white"
+                android:layout_height="@dimen/_40sdp"/>
+
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.88"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chipGroups"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

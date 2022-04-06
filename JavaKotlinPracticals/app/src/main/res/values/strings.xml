@@ -28,7 +28,6 @@
     <string name="simple_list_view_with_custom_style">Simple List View with Custom Style</string>
     <string name="custom_list_view">Custom List View</string>
     <string name="message">Message</string>
-    <string name="name">Name</string>
     <string name="recyclerview">Recyclerview With CheckBox</string>
     <string name="straggered_grid_layout">Straggered Grid Layout</string>
     <string name="straggeredgridlayout">Straggered Grid Layout</string>
@@ -174,4 +173,24 @@
     <string name="nested_recycler_view">Nested Recycler View</string>
     <string name="search">Search</string>
     <string name="my_profile">My Profile</string>
+    <string name="ui_widgets_e">UI Widgets(E)</string>
+    <string name="listviewsearch">ListViewSearch</string>
+    <string name="recyclerviewsearch">RecyclerViewSearch</string>
+    <string name="load_url">Load URL</string>
+    <string name="pdf">PDF</string>
+    <string name="load_web_page">Load Web Page</string>
+    <string name="listview_with_searchview">ListView with SearchView</string>
+    <string name="person_one">Person One</string>
+    <string name="name">Name</string>
+    <string name="person_two">Person Two</string>
+    <string name="person_three">Person Three</string>
+    <string name="person_four">Person Four</string>
+    <string name="horizontal_recyclerview">Horizontal RecyclerView</string>
+    <string name="vertical_recyclerview">Vertical RecyclerView</string>
+    <string name="nested_scroll_view">Nested Scroll View</string>
+
+    <string name="text">While creating apps we may need to face the different Design Architectural Patterns depends upon the project type and behavior.We always need to figure out the best architecture depends upon the project requirements and it’s behavior before initiating the project. Being an app developer, we need to know different design pattern and architectures. Some of the patterns that most of the app developers are used to are Model-View-Controller(MVC), Model-View-Presenter(MVP), Model-View-ViewModel(MVVM), and the one which we are going to learn VIPER(View-Interactor-Presenter-Entity-Router) etc.</string>
+    <string name="horizontal_scroll_search">Horizontal Scroll Search</string>
+    <string name="horizontal_scroll_view">Horizontal Scroll View</string>
+    <string name="webview">WebView</string>
 </resources>

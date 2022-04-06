@@ -9,27 +9,39 @@
 
     <TextView
         android:id="@+id/txtforsimple"
-        android:textColor="@color/dark_blue"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:text="@string/simple_list_view_with_default_style"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/_15ssp"/>
+        android:text="@string/simple_list_view_with_default_style"
+        android:textAlignment="center"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/custom_search_view"
+        android:elevation="@dimen/_1sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtforsimple"
+        app:queryHint="Search" />
 
     <ListView
-        android:layout_marginTop="@dimen/_10sdp"
         android:id="@+id/list_of_fruits"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:divider="@color/dark_blue"
         android:dividerHeight="@dimen/_1sdp"
         android:headerDividersEnabled="false"
-        android:divider="@color/dark_blue"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtforsimple"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

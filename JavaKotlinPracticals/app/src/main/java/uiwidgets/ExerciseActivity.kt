@@ -7,6 +7,8 @@ import com.example.javakotlinpracticals.databinding.ActivityAndroidDindexBinding
 import com.example.javakotlinpracticals.databinding.ActivityExerciseBinding
 import uiwidgetd.activity.intent.fragment.AndroidDIndex
 import uiwidgetsc.recyclerviewandadapters.Index
+import uiwidgetse.otherimportantviews.AndroidEIndex
+import uiwidgetse.otherimportantviews.ListViewSearch
 
 class ExerciseActivity : AppCompatActivity() {
 
@@ -27,7 +29,9 @@ class ExerciseActivity : AppCompatActivity() {
         }
         binding.uiWidgetsD.setOnClickListener {
             startActivity(Intent(this, AndroidDIndex::class.java))
-
+        }
+        binding.uiWidgetsE.setOnClickListener {
+            startActivity(Intent(this, AndroidEIndex::class.java))
         }
     }
 

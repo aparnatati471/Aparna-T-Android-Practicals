@@ -1,8 +1,10 @@
 package uiwidgetsc.recyclerviewandadapters
 
 import android.content.Context
+import android.content.res.Resources
 import com.example.javakotlinpracticals.R
 import com.google.gson.Gson
+import uiwidgetse.otherimportantviews.Student
 
 class Data {
     companion object getData {
@@ -16,6 +18,18 @@ class Data {
             arrayPersonList.add(Person("Vishal", "Hello", R.drawable.f))
             arrayPersonList.add(Person("Abhishek", "Hi", R.drawable.g))
             return arrayPersonList
+        }
+
+        fun getStudentData(): ArrayList<Student> {
+            val studentList: ArrayList<Student> = ArrayList()
+            studentList.add(Student(R.drawable.a, "Sonu"))
+            studentList.add(Student(R.drawable.b, "Jyoti"))
+            studentList.add(Student(R.drawable.c, "Nandini"))
+            studentList.add(Student(R.drawable.d, "Guddi"))
+            studentList.add(Student(R.drawable.e, "Aniket"))
+            studentList.add(Student(R.drawable.f, "Abhishek"))
+            studentList.add(Student(R.drawable.g, "Vishal"))
+            return studentList
         }
 
         fun getMoviesData(context: Context): ArrayList<DataClass> {
@@ -62,6 +76,19 @@ class Data {
             }
             return imageList
         }
+
+        fun getLanguageData(): ArrayList<Student> {
+            val languageList: ArrayList<Student> = ArrayList()
+            val data = "While creating apps we may need to face the different Design Architectural Patterns depends upon the project type and behavior.We always need to figure out the best architecture depends upon the project requirements and it’s behavior before initiating the project. Being an app developer, we need to know different design pattern and architectures. Some of the patterns that most of the app developers are used to are Model-View-Controller(MVC), Model-View-Presenter(MVP), Model-View-ViewModel(MVVM), and the one which we are going to learn VIPER(View-Interactor-Presenter-Entity-Router) etc."
+            languageList.add(Student(R.drawable.a, data))
+            languageList.add(Student(R.drawable.b, data))
+            languageList.add(Student(R.drawable.c, data))
+            languageList.add(Student(R.drawable.d, data))
+            languageList.add(Student(R.drawable.e, data))
+            languageList.add(Student(R.drawable.f, data))
+            return languageList
+        }
+
     }
 
 }

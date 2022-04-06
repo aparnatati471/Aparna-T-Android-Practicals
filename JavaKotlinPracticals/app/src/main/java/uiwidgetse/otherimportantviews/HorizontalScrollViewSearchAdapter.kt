@@ -1,45 +1,40 @@
-package uiwidgetsc.recyclerviewandadapters
+package uiwidgetse.otherimportantviews
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.CheckBox
 import android.widget.Filter
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.javakotlinpracticals.databinding.CustomRecyclerviewBinding
+import com.example.javakotlinpracticals.databinding.HorizontalSingleItemBinding
 
-class RecyclerViewCheckboxAdapter(private var recyclerViewCheckboxPersonModelList: ArrayList<Person>): RecyclerView.Adapter<RecyclerViewCheckboxAdapter.ViewHolder>() {
+class HorizontalScrollViewSearchAdapter(private var recyclerViewCheckboxPersonModelList: ArrayList<Student>): RecyclerView.Adapter<HorizontalScrollViewSearchAdapter.ViewHolder>() {
 
-    private lateinit var binding: CustomRecyclerviewBinding
-    private var matchedItem: ArrayList<Person> = arrayListOf()
-    private var context: Context? = null
+    private lateinit var binding: HorizontalSingleItemBinding
+
+    private var matchedItem: ArrayList<Student> = arrayListOf()
+    private lateinit var context: Context
 
     init {
         matchedItem = recyclerViewCheckboxPersonModelList
-        context = context
     }
 
-    inner class ViewHolder(val binding: CustomRecyclerviewBinding): RecyclerView.ViewHolder(binding.root) {
-        val imageView: ImageView = binding.image
+    inner class ViewHolder(val binding: HorizontalSingleItemBinding): RecyclerView.ViewHolder(binding.root) {
+        val imageView: ImageView = binding.img
         val txtname: TextView = binding.name
-        val txtmsg: TextView = binding.msg
-        val checkbox: CheckBox = binding.chkbox
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        binding = CustomRecyclerviewBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        binding = HorizontalSingleItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val personDetails = matchedItem[position]
-        personDetails.personimg?.let { holder.imageView.setImageResource(it) }
-        holder.txtname.text = personDetails.personname
-        holder.txtmsg.text = personDetails.personmsg
-        holder.checkbox.isChecked = false
+        personDetails.img?.let { holder.imageView.setImageResource(it) }
+        holder.txtname.text = personDetails.name
     }
 
     override fun getItemCount(): Int = matchedItem.size
@@ -53,8 +48,8 @@ class RecyclerViewCheckboxAdapter(private var recyclerViewCheckboxPersonModelLis
                     recyclerViewCheckboxPersonModelList
                 } else {
                     recyclerViewCheckboxPersonModelList.filter {
-                        it.personname?.lowercase()?.contains(character) ?: it.personselect
-                    } as ArrayList<Person>
+                        it.name?.lowercase()?.contains(character) ?: true
+                    } as ArrayList<Student>
                 }
                 val filterResults = FilterResults()
                 filterResults.values = matchedItem
@@ -62,10 +57,9 @@ class RecyclerViewCheckboxAdapter(private var recyclerViewCheckboxPersonModelLis
             }
 
             override fun publishResults(p0: CharSequence?, p1: FilterResults?) {
-                matchedItem = p1?.values as? ArrayList<Person> ?: recyclerViewCheckboxPersonModelList
+                matchedItem = p1?.values as? ArrayList<Student> ?: recyclerViewCheckboxPersonModelList
                 notifyDataSetChanged()
             }
         }
     }
-
 }
