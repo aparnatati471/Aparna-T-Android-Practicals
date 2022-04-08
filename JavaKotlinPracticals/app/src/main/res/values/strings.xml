@@ -174,4 +174,23 @@
     <string name="nested_recycler_view">Nested Recycler View</string>
     <string name="search">Search</string>
     <string name="my_profile">My Profile</string>
+    <string name="login">Login</string>
+    <string name="android_architecture">Android Architecture</string>
+    <string name="mvc">MVC</string>
+    <string name="mvp">MVP</string>
+    <string name="mvvm">MVVM</string>
+    <string name="inverse_binding">Inverse Binding</string>
+    <string name="plus">+</string>
+    <string name="viewmodelfactory">ViewModelFactory</string>
+    <string name="permission">Permission</string>
+    <string name="permission_demo_one">Permission Demo One</string>
+    <string name="location_permission">Location Permission</string>
+    <string name="camera_permission">Camera Permission</string>
+    <string name="granted_msg">Permission Granted!!</string>
+    <string name="external_read">External Read</string>
+    <string name="multiple_permission">Multiple Permission</string>
+    <string name="permission_demo_two">Permission Demo Two</string>
+    <string name="image_from_gallery">Image From Gallery</string>
+    <string name="image_from_camera">Image From Camera</string>
+    <string name="save_to_gallery">Save To Gallery</string>
 </resources>
