@@ -13,7 +13,7 @@ class PersonActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityPersonBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.secondimageview.setImageResource(intent.getIntExtra("Image", R.drawable.a))
+      //  binding.secondimageview.setImageResource(intent.getIntExtra("Image", R.drawable.a))
         binding.secondname.text = intent.getStringExtra("Name")
         binding.secondmsg.text = intent.getStringExtra("Message")
     }

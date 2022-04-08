@@ -68,5 +68,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ui_widgets_c" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_architecture"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:backgroundTint="@color/dark_blue"
+        android:text="@string/android_architecture"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        app:cornerRadius="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ui_widgets_d" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

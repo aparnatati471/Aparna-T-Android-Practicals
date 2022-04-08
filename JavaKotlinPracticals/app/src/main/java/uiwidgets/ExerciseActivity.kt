@@ -1,9 +1,10 @@
 package uiwidgets
 
+import android.architecture.ArchitectureIndex
+import android.architecture.mvc.UserView
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.javakotlinpracticals.databinding.ActivityAndroidDindexBinding
 import com.example.javakotlinpracticals.databinding.ActivityExerciseBinding
 import uiwidgetd.activity.intent.fragment.AndroidDIndex
 import uiwidgetsc.recyclerviewandadapters.Index
@@ -27,7 +28,9 @@ class ExerciseActivity : AppCompatActivity() {
         }
         binding.uiWidgetsD.setOnClickListener {
             startActivity(Intent(this, AndroidDIndex::class.java))
-
+        }
+        binding.btnArchitecture.setOnClickListener {
+            startActivity(Intent(this, ArchitectureIndex::class.java))
         }
     }
 

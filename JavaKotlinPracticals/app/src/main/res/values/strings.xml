@@ -174,4 +174,12 @@
     <string name="nested_recycler_view">Nested Recycler View</string>
     <string name="search">Search</string>
     <string name="my_profile">My Profile</string>
+    <string name="login">Login</string>
+    <string name="android_architecture">Android Architecture</string>
+    <string name="mvc">MVC</string>
+    <string name="mvp">MVP</string>
+    <string name="mvvm">MVVM</string>
+    <string name="inverse_binding">Inverse Binding</string>
+    <string name="plus">+</string>
+    <string name="viewmodelfactory">ViewModelFactory</string>
 </resources>
