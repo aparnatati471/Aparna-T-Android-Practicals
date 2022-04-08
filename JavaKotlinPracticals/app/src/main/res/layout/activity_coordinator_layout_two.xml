@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="design.support.library.CoordinatorLayoutTwo">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:title="Kotlin programming"
+            app:collapsedTitleTextColor="@color/white"
+            app:expandedTitleTextColor="@color/white"
+            app:contentScrim="?attr/colorPrimary">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_logo"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_marginBottom="@dimen/_40sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kotlin_image"
+                app:layout_collapseMode="parallax"
+                android:layout_gravity="center"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:theme="@style/Theme.NoActionBar"
+                android:layout_width="match_parent"
+                app:layout_collapseMode="pin"
+                android:layout_height="?attr/actionBarSize">
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:textSize="@dimen/_14ssp"
+            android:justificationMode="inter_word"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="@string/kotlin_intro"
+            android:layout_marginTop="@dimen/_30sdp"/>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        app:fabSize="normal"
+        app:tint = "@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/app_bar_layout"
+        app:layout_anchorGravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        android:contentDescription="@string/kotlin_intro" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

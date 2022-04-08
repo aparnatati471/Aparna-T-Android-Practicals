@@ -3,6 +3,7 @@ package uiwidgetsc.recyclerviewandadapters
 import android.content.Context
 import com.example.javakotlinpracticals.R
 import com.google.gson.Gson
+import design.support.library.Chats
 
 class Data {
     companion object getData {
@@ -15,6 +16,18 @@ class Data {
             arrayPersonList.add(Person("Aniket", "Had Dinner?", R.drawable.e))
             arrayPersonList.add(Person("Vishal", "Hello", R.drawable.f))
             arrayPersonList.add(Person("Abhishek", "Hi", R.drawable.g))
+            return arrayPersonList
+        }
+
+        fun whatsAppChatsData(): ArrayList<Chats> {
+            val arrayPersonList: ArrayList<Chats> = ArrayList()
+            arrayPersonList.add(Chats("Sonu", "Hii", R.drawable.a))
+            arrayPersonList.add(Chats("Jyoti", "Hello", R.drawable.b))
+            arrayPersonList.add(Chats("Nandini", "How R u", R.drawable.c))
+            arrayPersonList.add(Chats("Guddi", "Fine", R.drawable.d))
+            arrayPersonList.add(Chats("Aniket", "Had Dinner?", R.drawable.e))
+            arrayPersonList.add(Chats("Vishal", "Hello", R.drawable.f))
+            arrayPersonList.add(Chats("Abhishek", "Hi", R.drawable.g))
             return arrayPersonList
         }
 

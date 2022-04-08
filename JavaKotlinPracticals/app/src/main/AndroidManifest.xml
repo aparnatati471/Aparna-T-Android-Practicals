@@ -3,10 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.javakotlinpracticals">
 
-    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE " />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -21,23 +24,79 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JavaKotlinPracticals">
         <activity
+            android:name="design.support.library.CoordinatorLayoutTwo"
+            android:exported="false"
+            android:theme="@style/Theme.NoActionBar"/>
+        <activity
+            android:name="design.support.library.TabLayoutWithCoordinatorLayout"
+            android:exported="false"
+            android:theme="@style/Theme.NoActionBar" />
+        <activity
+            android:name="design.support.library.CoordinatorLayout"
+            android:exported="false"
+            android:theme="@style/Theme.NoActionBar" />
+        <activity
+            android:name="design.support.library.NavigationView"
+            android:exported="false" />
+        <activity
+            android:name="design.support.library.AndroidDesignSupportIndex"
+            android:exported="false" />
+        <activity
+            android:name="permission.model.DemoTwo"
+            android:exported="false" />
+        <activity
+            android:name="permission.model.DemoOne"
+            android:exported="false" />
+        <activity
+            android:name="permission.model.PermissionModelIndex"
+            android:exported="false" />
+        <activity
+            android:name="android.architecture.coroutines.ViewModelScopeExample"
+            android:exported="false" />
+        <activity
+            android:name="android.architecture.coroutines.CoroutineAPICalling"
+            android:exported="false" />
+        <activity
+            android:name="android.architecture.viewmodelfactory.ViewModelFactory"
+            android:exported="false" />
+        <activity
+            android:name="android.architecture.bindingandinverseadapters.BindingAndReverseBindingAdapters"
+            android:exported="false" />
+        <activity
+            android:name="android.architecture.mvvm.view.MvvmLogin"
+            android:exported="false" />
+        <activity
+            android:name="android.architecture.ArchitectureIndex"
+            android:exported="false" />
+        <activity
+            android:name="android.architecture.mvc.UserView"
+            android:exported="false" />
+        <activity
+            android:name="android.architecture.mvp.presenter.MVPLogin"
+            android:exported="false" />
+        <activity
             android:name="uiwidgetd.activity.intent.fragment.IntentFilter"
             android:exported="true">
-
             <intent-filter>
-                <data android:scheme="http" android:host="www.google.com" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:host="www.google.com"
+                    android:scheme="http" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
-
             <intent-filter>
-                <data android:scheme="https" android:host="www.google.com" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:host="www.google.com"
+                    android:scheme="https" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
-
         </activity>
         <activity
             android:name="uiwidgetd.activity.intent.fragment.PendingIntent"
@@ -45,7 +104,8 @@
         <activity
             android:name="uiwidgetd.activity.intent.fragment.ExerciseFour"
             android:exported="false" />
-        <activity android:name="uiwidgetsc.recyclerviewandadapters.BottomNavigationBar"
+        <activity
+            android:name="uiwidgetsc.recyclerviewandadapters.BottomNavigationBar"
             android:exported="false" />
         <activity
             android:name="uiwidgetd.activity.intent.fragment.ExerciseThree"
@@ -71,11 +131,12 @@
         <activity
             android:name="uiwidgetd.activity.intent.fragment.IntentIndex"
             android:exported="false" />
-        <activity android:name="uiwidgetsc.recyclerviewandadapters.Index"
-            android:exported="false"/>
-
-        <activity android:name="uiwidgetsc.recyclerviewandadapters.RecyclerAndAdaptersExercise"
-            android:exported="false"/>
+        <activity
+            android:name="uiwidgetsc.recyclerviewandadapters.Index"
+            android:exported="false" />
+        <activity
+            android:name="uiwidgetsc.recyclerviewandadapters.RecyclerAndAdaptersExercise"
+            android:exported="false" />
         <activity
             android:name="uiwidgetsc.recyclerviewandadapters.ExpandableRecyclerView"
             android:exported="false" />
@@ -170,7 +231,6 @@
             android:exported="false" />
 
         <receiver android:name="uiwidgetd.activity.intent.fragment.AlarmReceiver" />
-
     </application>
 
 </manifest>
