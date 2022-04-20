@@ -2,6 +2,7 @@
     <string name="app_name">JavaKotlinPracticals</string>
     <string name="HI">Sign up and get started</string>
     <string name="shortMsg">Sign up and get started</string>
+    <string name="shortMsg1">Login and get started</string>
     <string name="welcomeMsg">Welcome</string>
     <string name="username">Username</string>
     <string name="email">Email Address</string>
@@ -28,7 +29,6 @@
     <string name="simple_list_view_with_custom_style">Simple List View with Custom Style</string>
     <string name="custom_list_view">Custom List View</string>
     <string name="message">Message</string>
-    <string name="name">Name</string>
     <string name="recyclerview">Recyclerview With CheckBox</string>
     <string name="straggered_grid_layout">Straggered Grid Layout</string>
     <string name="straggeredgridlayout">Straggered Grid Layout</string>
@@ -46,7 +46,6 @@
     <string name="select_country">Select Country</string>
     <string name="phone_number">Phone Number</string>
     <string name="i_accept_all_the_terms_and_conditions">I accept all the terms and conditions</string>
-    <string name="create">Create</string>
     <string name="countries">Countries</string>
     <string name="relative_layout">Relative Layout</string>
     <string name="table_layout">Table Layout</string>
@@ -174,4 +173,23 @@
     <string name="nested_recycler_view">Nested Recycler View</string>
     <string name="search">Search</string>
     <string name="my_profile">My Profile</string>
+    <string name="web_services">Web Services</string>
+    <string name="login">Login</string>
+    <string name="emailretro">Email</string>
+    <string name="first_name_retro">First Name</string>
+    <string name="last_name_retro">Last Name</string>
+    <string name="personEmail">Email</string>
+    <string name="personFirstName">FirstName</string>
+    <string name="personLastName">LastName</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="job">Job</string>
+    <string name="name">Name</string>
+    <string name="patch">Patch</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="json_parsing">JSON Parsing</string>
+    <string name="gson_parsing">GSON Parsing</string>
+    <string name="cityslicka">cityslicka</string>
+    <string name="eve_holt_reqres_in">eve.holt@reqres.in</string>
 </resources>
