@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="uiwidgetsc.recyclerviewandadapters.PersonActivity">
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/secondimageview"
         android:layout_width="@dimen/_200sdp"
         android:layout_height="@dimen/_200sdp"
