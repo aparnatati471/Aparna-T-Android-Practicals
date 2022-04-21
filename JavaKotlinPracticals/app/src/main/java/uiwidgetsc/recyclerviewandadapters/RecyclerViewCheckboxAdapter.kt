@@ -1,12 +1,12 @@
 package uiwidgetsc.recyclerviewandadapters
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.javakotlinpracticals.databinding.CustomRecyclerviewBinding
 
 class RecyclerViewCheckboxAdapter(private var recyclerViewCheckboxPersonModelList: ArrayList<Person>): RecyclerView.Adapter<RecyclerViewCheckboxAdapter.ViewHolder>() {
@@ -14,7 +14,7 @@ class RecyclerViewCheckboxAdapter(private var recyclerViewCheckboxPersonModelLis
     private lateinit var binding: CustomRecyclerviewBinding
 
     inner class ViewHolder(val binding: CustomRecyclerviewBinding): RecyclerView.ViewHolder(binding.root) {
-        val imageView: ImageView = binding.image
+       val imageView: ImageView = binding.image
         val txtname: TextView = binding.name
         val txtmsg: TextView = binding.msg
         val checkbox: CheckBox = binding.chkbox

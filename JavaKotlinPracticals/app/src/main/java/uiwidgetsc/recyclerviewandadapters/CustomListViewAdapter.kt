@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import com.bumptech.glide.Glide
 import com.example.javakotlinpracticals.R
 import com.example.javakotlinpracticals.databinding.ListItemBinding
 
@@ -21,7 +22,7 @@ class CustomListViewAdapter(
     @SuppressLint("ViewHolder")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         binding = ListItemBinding.inflate(context.layoutInflater, convertView as ViewGroup?, false)
-        binding.imageview.setImageResource(arrayList[position].personimg)
+        Glide.with(context).load(arrayList[position].personimg).into(binding.imageview)
         binding.pname.text = arrayList[position].personname
         binding.pmsg.text = arrayList[position].personmsg
         return binding.root
