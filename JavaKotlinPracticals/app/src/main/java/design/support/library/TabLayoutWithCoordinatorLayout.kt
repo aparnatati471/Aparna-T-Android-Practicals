@@ -32,9 +32,9 @@ class TabLayoutWithCoordinatorLayout : AppCompatActivity() {
         }.attach()
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.nav_search_menu, menu)
-        val search = menu?.findItem(R.id.searchchats)
+        val search = menu.findItem(R.id.searchchats)
         val searchView = search?.actionView as SearchView
         searchView.queryHint = "Search"
 

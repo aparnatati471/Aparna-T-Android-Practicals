@@ -14,24 +14,16 @@
         <entry key="app/src/main/res/drawable/ic_baseline_account_box_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1546875" />
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_circle_left_24.xml" value="0.18020833333333333" />
-        <entry key="app/src/main/res/drawable/ic_baseline_chat_bubble_24.xml" value="0.109" />
         <entry key="app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.18020833333333333" />
         <entry key="app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.18020833333333333" />
-        <entry key="app/src/main/res/drawable/ic_baseline_message_24.xml" value="0.109" />
-        <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.109" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1361111111111111" />
         <entry key="app/src/main/res/drawable/ic_outline_email_24.xml" value="0.18020833333333333" />
         <entry key="app/src/main/res/drawable/ic_outline_lock_24.xml" value="0.18020833333333333" />
-        <entry key="app/src/main/res/drawable/rounded_image.xml" value="0.109" />
-        <entry key="app/src/main/res/layout-v26/activity_coordinator_layout.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/abc.xml" value="0.17604166666666668" />
-        <entry key="app/src/main/res/layout/activity_android_design_support_index.xml" value="0.16041666666666668" />
         <entry key="app/src/main/res/layout/activity_android_dindex.xml" value="0.17" />
         <entry key="app/src/main/res/layout/activity_bottom_navigation_bar.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_button_ripple_affects.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_constraint_layout.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_coordinator_layout.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_coordinator_layout_two.xml" value="0.16041666666666668" />
+        <entry key="app/src/main/res/layout/activity_coroutine_apicalling.xml" value="0.1408514492753623" />
         <entry key="app/src/main/res/layout/activity_custom_list_view.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_custom_toast.xml" value="0.1484375" />
         <entry key="app/src/main/res/layout/activity_display_single_user.xml" value="0.16" />
@@ -45,6 +37,7 @@
         <entry key="app/src/main/res/layout/activity_fragments.xml" value="0.10597826086956522" />
         <entry key="app/src/main/res/layout/activity_frame_layout.xml" value="0.10597826086956522" />
         <entry key="app/src/main/res/layout/activity_gson_parsing.xml" value="0.14375" />
+        <entry key="app/src/main/res/layout/activity_hilt.xml" value="0.16" />
         <entry key="app/src/main/res/layout/activity_implicit_intent.xml" value="0.10597826086956522" />
         <entry key="app/src/main/res/layout/activity_index.xml" value="0.10597826086956522" />
         <entry key="app/src/main/res/layout/activity_intent_filter.xml" value="0.22392344497607655" />
@@ -55,7 +48,6 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.21" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_mdcform.xml" value="0.16" />
-        <entry key="app/src/main/res/layout/activity_navigation_view.xml" value="0.17604166666666668" />
         <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.14" />
         <entry key="app/src/main/res/layout/activity_pending_intent.xml" value="0.10597826086956522" />
         <entry key="app/src/main/res/layout/activity_person.xml" value="0.1" />
@@ -72,18 +64,14 @@
         <entry key="app/src/main/res/layout/activity_start_for_result_two.xml" value="0.10597826086956522" />
         <entry key="app/src/main/res/layout/activity_straggered_grid_layout.xml" value="0.12454710144927536" />
         <entry key="app/src/main/res/layout/activity_tab_layout.xml" value="0.10597826086956522" />
-        <entry key="app/src/main/res/layout/activity_tab_layout_with_coordinator_layout.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_view_pager.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_web_login.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_web_services_index.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/chat_single_item.xml" value="0.17604166666666668" />
         <entry key="app/src/main/res/layout/custom_alert_dialog.xml" value="0.25" />
         <entry key="app/src/main/res/layout/custom_recyclerview.xml" value="0.1" />
         <entry key="app/src/main/res/layout/custom_straggered_grid_layout.xml" value="0.1" />
         <entry key="app/src/main/res/layout/custom_toast.xml" value="0.16304347826086957" />
         <entry key="app/src/main/res/layout/fragment_add_message.xml" value="0.10597826086956522" />
         <entry key="app/src/main/res/layout/fragment_calls.xml" value="0.10597826086956522" />
-        <entry key="app/src/main/res/layout/fragment_chats.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_fragments_one.xml" value="0.10597826086956522" />
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.10597826086956522" />
         <entry key="app/src/main/res/layout/fragment_input.xml" value="0.10597826086956522" />
@@ -94,17 +82,10 @@
         <entry key="app/src/main/res/layout/fragment_send_message.xml" value="0.10597826086956522" />
         <entry key="app/src/main/res/layout/fragment_view_message.xml" value="0.10597826086956522" />
         <entry key="app/src/main/res/layout/fragment_view_message2.xml" value="0.10597826086956522" />
-        <entry key="app/src/main/res/layout/fragment_view_pager_first.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_whats_app_chats.xml" value="0.17604166666666668" />
         <entry key="app/src/main/res/layout/list_content.xml" value="0.13854166666666667" />
         <entry key="app/src/main/res/layout/list_item.xml" value="0.11775362318840579" />
-        <entry key="app/src/main/res/layout/list_main_title.xml" value="0.1" />
         <entry key="app/src/main/res/layout/list_sub_title.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/nav_header.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/nav_search_meny.xml" value="0.17604166666666668" />
-        <entry key="app/src/main/res/menu/menu.xml" value="0.17604166666666668" />
-        <entry key="app/src/main/res/menu/nav_menu.xml" value="0.17604166666666668" />
-        <entry key="app/src/main/res/menu/nav_search_menu.xml" value="0.17604166666666668" />
+        <entry key="app/src/main/res/layout/single_person_detail.xml" value="0.33" />
       </map>
     </option>
   </component>

@@ -16,6 +16,7 @@
         android:required="true" />
 
     <application
+        android:name="dependency.injection.HiltApplication"
         android:allowBackup="true"
         android:fullBackupOnly="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,15 +25,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JavaKotlinPracticals">
         <activity
-            android:name="design.support.library.CoordinatorLayoutTwo"
-            android:exported="false"
-            android:theme="@style/Theme.NoActionBar"/>
+            android:name="dependency.injection.HiltActivity"
+            android:exported="false" />
         <activity
-            android:name="design.support.library.TabLayoutWithCoordinatorLayout"
+            android:name="design.support.library.CoordinatorLayoutTwo"
             android:exported="false"
             android:theme="@style/Theme.NoActionBar" />
         <activity
-            android:name="design.support.library.CoordinatorLayout"
+            android:name="design.support.library.TabLayoutWithCoordinatorLayout"
             android:exported="false"
             android:theme="@style/Theme.NoActionBar" />
         <activity

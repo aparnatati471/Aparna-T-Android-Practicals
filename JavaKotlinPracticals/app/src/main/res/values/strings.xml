@@ -231,5 +231,6 @@
     <string name="toast_msg">Clicked On Fab Button</string>
     <string name="action">Action</string>
     <string name="action_clicked">Action Clicked</string>
+    <string name="dependency_injection">Dependency Injection</string>
 
 </resources>

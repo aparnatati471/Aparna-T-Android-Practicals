@@ -1,45 +1,50 @@
 package uiwidgets
 
 import android.architecture.ArchitectureIndex
-import android.architecture.mvc.UserView
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.example.javakotlinpracticals.databinding.ActivityExerciseBinding
+import com.microsoft.appcenter.AppCenter
+import com.microsoft.appcenter.analytics.Analytics
+import com.microsoft.appcenter.crashes.Crashes
+import dependency.injection.HiltActivity
 import design.support.library.AndroidDesignSupportIndex
 import permission.model.PermissionModelIndex
 import uiwidgetd.activity.intent.fragment.AndroidDIndex
 import uiwidgetsc.recyclerviewandadapters.Index
 
-class ExerciseActivity : AppCompatActivity() {
+
+class ExerciseActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityExerciseBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        AppCenter.start(
+            application, "0954a491-119d-4200-a9f7-a6b90841097c",
+            Analytics::class.java, Crashes::class.java
+        )
         binding = ActivityExerciseBinding.inflate(layoutInflater)
+        binding.click = this
         setContentView(binding.root)
-        binding.uiWidgetsA.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
-        }
-        binding.uiWidgetsB.setOnClickListener {
-            startActivity(Intent(this, LayoutsMain::class.java))
-        }
-        binding.uiWidgetsC.setOnClickListener {
-            startActivity(Intent(this, Index::class.java))
-        }
-        binding.uiWidgetsD.setOnClickListener {
-            startActivity(Intent(this, AndroidDIndex::class.java))
-        }
-        binding.btnArchitecture.setOnClickListener {
-            startActivity(Intent(this, ArchitectureIndex::class.java))
-        }
-        binding.btnPermissionModel.setOnClickListener {
-            startActivity(Intent(this, PermissionModelIndex::class.java))
-        }
-        binding.btnDesignSupport.setOnClickListener {
-            startActivity(Intent(this, AndroidDesignSupportIndex::class.java))
+    }
+
+    override fun onClick(p0: View) {
+        when(p0.id) {
+            binding.uiWidgetsA.id -> navigateToNext(MainActivity::class.java)
+            binding.uiWidgetsB.id -> navigateToNext(LayoutsMain::class.java)
+            binding.uiWidgetsC.id -> navigateToNext(Index::class.java)
+            binding.uiWidgetsD.id -> navigateToNext(AndroidDIndex::class.java)
+            binding.btnArchitecture.id -> navigateToNext(ArchitectureIndex::class.java)
+            binding.btnPermissionModel.id -> navigateToNext(PermissionModelIndex::class.java)
+            binding.btnDesignSupport.id -> navigateToNext(AndroidDesignSupportIndex::class.java)
+            binding.btnDependencyInjection.id -> navigateToNext(HiltActivity::class.java)
         }
     }
 
+    private fun navigateToNext(className: Class<*>) {
+        startActivity(Intent(this, className))
+    }
 }
