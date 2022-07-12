@@ -23,7 +23,7 @@ class ExerciseActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         AppCenter.start(
-            application, "0954a491-119d-4200-a9f7-a6b90841097c",
+            application, "136a996a-5731-4079-a3f6-e31466991f1e",
             Analytics::class.java, Crashes::class.java
         )
         binding = ActivityExerciseBinding.inflate(layoutInflater)
